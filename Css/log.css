@@ -1,0 +1,77 @@
+html{-webkit-text-size-adjust: 100%;}
+body{ 
+	position: relative;
+	background-image: url("../Images/bg2.jpg");
+	background-repeat: no-repeat;
+	background-position: cover;
+	background-size: 115%;
+	max-width: 100%;
+	box-sizing: border-box;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+#page{
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	min-width: 50%;
+}
+#form{
+	color: rgb(245,173,37);
+	width: 300px;
+	max-width: 70%;
+	min-width: 20%;
+	height: 450px auto;
+	background-color: rgb(255,255,255);
+	padding: 30px;
+	text-align: center;
+	box-shadow: 8px 8px 8px #000000;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	box-sizing: border-box;
+}
+.sub{
+	color: rgb(245,173,37);
+	border: none;
+	background-color: inherit;
+	outline: none;
+	cursor: pointer;
+	border-right: thin solid gray;
+	border-left: thin solid gray;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	max-width: 200px;
+}
+#toggle{
+		background-color: none;
+		padding-left: 85px;
+}
+.input-icons i{
+				position: absolute;
+				left: 10px;
+				top: 7px;
+}
+.input-icons{
+				position: relative;
+				margin-bottom: 20px;
+}
+.icon{
+		padding: 3px;
+		color: rgb(245,173,37);
+}
+#status{
+	padding-bottom: 10px;
+	max-width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.form-control{
+	color: balck;
+	width: 200px auto;
+	padding-left: 40px;
+}
