@@ -29,7 +29,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 	
 	if(empty($username_err) && empty($password_err)){
 		$status = $_POST['status'];
-		$sql = "SELECT First_Name, Last_Name,Username, Password FROM ".$status." WHERE Username=?";
+		$sql = "SELECT Student_ID, First_Name, Last_Name,Username, Password FROM ".$status." WHERE Username=?";
 		
 		if($stmt = mysqli_prepare($link, $sql)){
 			mysqli_stmt_bind_param($stmt,'s', $username_param);
@@ -38,13 +38,17 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 				mysqli_stmt_store_result($stmt);
 				
 				if(mysqli_stmt_num_rows($stmt) == 1){
-					mysqli_stmt_bind_result($stmt, $lname, $fname,$username_res, $password_res);
+					mysqli_stmt_bind_result($stmt, $id, $fname, $lname,$username_res, $password_res);
 					if(mysqli_stmt_fetch($stmt)){
-						if($password== $password_res){
+						if($password== $password_res || password_verify($password, $password_res)){
 							session_start();
 							$_SESSION['success'] = true;
 							$_SESSION['username']=$username_res;
+							$_SESSION['fname']= $fname;
+							$_SESSION['lname']= $lname;
 							$_SESSION['fullname'] = $fname." ".$lname;
+							$_SESSION['ID']=$id;
+							$_SESSION['status'] = $status;
 							
 							header("location:".$status.".php");
 						}

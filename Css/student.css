@@ -1,0 +1,8 @@
+body{
+    font-size: 14px;
+}
+#allcontent{
+    display: flex;
+    background-color: #eeedf2;
+    margin: 0px -8px 0px -8px;
+}
