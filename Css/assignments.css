@@ -1,0 +1,80 @@
+
+#table{
+    border: thin solid grey;
+    border-collapse: collapse;
+    width: fit-content;
+    
+}
+#upload{
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    box-shadow: 7px 7px 4px grey;
+    padding: 10px;
+    border: 2px solid grey;
+    background-color: white;
+}
+#upload-form td{
+    text-align: left;
+    vertical-align: top;
+    padding: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#table th, #table td{
+    border: thin solid grey;
+    width: fit-content;
+    margin-left: auto;
+}
+#table th{
+    padding: 7px;
+    height: 20px;
+}
+#table td{
+    padding: 7px;
+    height: 20px;
+}
+#table tr:first-child th{
+	text-align: center;
+	color:  black;
+	background-color:rgb(30,144,255, .1);
+}
+#table td:last-child{
+    text-align: center;
+    padding:9px;
+}
+#table tr:nth-child(odd){
+	background-color: rgb(30,144,255, .1);
+}
+#table tr:nth-child(odd) .download{
+	background-color: white;
+    padding: 6px;
+    border-radius: 6px;
+}
+.download{
+    background-color: rgb(30,144,255, .1);
+    padding: 6px;
+    border-radius: 6px;
+}
+a:hover{
+    transform: scale(1.1);
+}
+#add{
+    background-color: dodgerblue;
+    clip-path: circle(28px at center);
+    padding: 20px;
+    text-align: center;
+    font-size: 23px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+    right: 150px;
+}
+#add .icon{
+    color: white;
+}
+#add:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}

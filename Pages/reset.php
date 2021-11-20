@@ -74,11 +74,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <html>
 <head>
     <title>Victoria School</title>
-	<link rel="stylesheet" href="../Css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../Css/reset.css">
+    <link rel="stylesheet" href="../Css/fontawesome/css/all.css" />
+        <link rel="stylesheet" href="../Css/components.css" />
 </head>
 <body>
-<div id="allcontent">
 <?php include '../Components/header.php' ?>
+<div id="allcontent">
 <div id="page">
 <h2>Reset Password</h2>
 	<p>Please fill out this form to reset your password.</p>

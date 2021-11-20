@@ -1,0 +1,70 @@
+.lesson{
+    border-radius: 10px;
+    background-color: rgb(30,144,255, .1);
+    padding: 15px;
+    margin-bottom: 10px;
+    width: 50%;
+    box-shadow: 7px 7px 4px grey;
+}
+h3{
+    margin-top: 0px;
+}
+.description{
+    padding-bottom: 10px;
+}
+.filegroup{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+    height: 50px;
+    vertical-align: center;
+}
+.file{
+    font-style: italic;
+}
+.downloadBtn{
+    background-color: dodgerblue;
+    padding: 7px;
+    border-radius: 7px;
+    height: 20px;
+}
+.downloadText{
+    text-align: center;
+    vertical-align: middle;
+}
+a:hover{
+    transform: scale(1.05);
+}
+.lesson:hover{
+    transform: scale(1.01);
+}
+#upload{
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    box-shadow: 7px 7px 4px grey;
+    padding: 10px;
+    border: 2px solid grey;
+    background-color: white;
+}
+#add{
+    background-color: dodgerblue;
+    clip-path: circle(28px at center);
+    padding: 20px;
+    text-align: center;
+    font-size: 23px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+    right: 150px;
+}
+#add .icon{
+    color: white;
+}
+#add:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
